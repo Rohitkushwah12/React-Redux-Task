@@ -46,6 +46,11 @@ const Tasks = () => {
             })}
           </tbody>
         </table>
+        <div>
+          {count === 1 && (
+            <h4 style={{ textAlign: "center" }}>No task added yet</h4>
+          )}
+        </div>
       </div>
 
       <div>
@@ -78,6 +83,11 @@ const Tasks = () => {
             })}
           </tbody>
         </table>
+        <div>
+          {count1 === 1 && (
+            <h4 style={{ textAlign: "center" }}>No task completed yet</h4>
+          )}
+        </div>
       </div>
     </div>
   );
