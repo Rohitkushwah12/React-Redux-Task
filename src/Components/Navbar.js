@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./bootstrap/css/bootstrap.css";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <ul className="nav">
-        <li>
+    <nav style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+      <ul className="nav justify-content-center">
+        <li className="nav-item">
           <Link className="nav-link active" to="/">
             Home
           </Link>
