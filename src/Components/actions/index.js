@@ -17,13 +17,9 @@ export const deleteTask = (id) => {
   };
 };
 
-export const markTaskCompleted = (task) => {
+export const markTaskCompleted = (id) => {
   return {
     type: MARK_TASK_COMPLETED,
-    payload: {
-      id: task.id,
-      name: task.name,
-      isCompleted: task.name,
-    },
+    id,
   };
 };
